@@ -1,30 +1,41 @@
+
+
+
+
+
+
+
 .pics{
     height: 100%;
     width: 100%;
     
-    left: 10rem;
+    
     
 }
 
 h1{
-    font-size: 10rem;
+    font-size: 5rem;
     text-align: center;
     font-family: star jedi;
     color: #EEDB00 
 }
 
 .container{
-    width: 50%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto ;
+    margin: 0 auto;
+    grid-gap: 1rem;
 }
 
 
   img{
-      width: 40%;
-      padding: 1rem;
+      width: 100%;
+      margin: 1rem;
       position: relative;
-      left: 25rem;
-      transition: transform .2s;
       
+      transition: transform .2s;
+
       
      
   }
@@ -45,4 +56,54 @@ h1{
 
   body{
       background-color: black;
+      background-image: url("./bg/bg.jpeg");
   }
+
+
+
+
+
+  @media only screen and (min-width: 800px ) {
+
+
+    .container{
+       
+    
+        grid-template-columns: auto auto auto ;
+       
+    }
+
+    h1{
+        font-size: 10rem;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  } 
